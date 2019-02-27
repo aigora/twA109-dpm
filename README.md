@@ -1,10 +1,10 @@
-# Título del trabajo
+# Caja musical
 
-Descripción breve del proyecto a realizar (2-3 frases).
+Nuestro trabajo consiste en contruir una caja en el que contiene una serie de botones, los cuales al pulsarlos, el ordenador recibe la información y reproduce sonidos de las notas musical/ los instrumentos musicales/ las canciones, dependiendiendo del botón pulsado.
 
 ## Integrantes del equipo
 
-Nombres, apellidos, y usuario GitHub de los integrantes del equipo.
+Aiwen Zhou / Zhanyao Lin/ Wei Zheng
 
 ## Objetivos del trabajo
 
