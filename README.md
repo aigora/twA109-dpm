@@ -7,7 +7,7 @@ Nuestro trabajo consiste en contruir una caja la cual contiene una serie de boto
 Integrantes | Usuario | Correo
 ------------|---------|-------
 Aiwen Zhou | @azhou12 | a.zhou@alumnos.upm.es
-Zhanyao Lin | @bjkasbjkbajk | zhanyao.lin@alumnos.upm.es
+Zhanyao Lin | @zhanyaolin | zhanyao.lin@alumnos.upm.es
 Wei Zheng | @asdfghjkl | smcfbsdjkbcjkasncl
 
 
