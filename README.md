@@ -1,11 +1,18 @@
 # Caja musical
 
-Nuestro trabajo consiste en contruir una caja en el que contiene una serie de botones, los cuales al pulsarlos, el ordenador recibe la información y reproduce sonidos de las notas musical/ los instrumentos musicales/ las canciones, dependiendiendo del botón pulsado.
+Nuestro trabajo consiste en contruir una caja la cual contiene una serie de botones, los cuales al pulsarlos, el ordenador recibe la información y reproduce sonidos de las notas musical/ los instrumentos musicales/ las canciones, dependiendiendo del botón pulsado.
 
 ## Integrantes del equipo
 
-Aiwen Zhou / Zhanyao Lin/ Wei Zheng
+Integrantes | Usuario | Correo
+------------|---------|-------
+Aiwen Zhou | azhou12 | a.zhou@alumnos.upm.es
+Zhanyao Lin | bjkasbjkbajk | zhanyao.lin@alumnos.upm.es
+Wei Zheng | asdfghjkl | smcfbsdjkbcjkasncl
+
 
 ## Objetivos del trabajo
 
-Lista de los objetivos que se persiguen con el trabajo propuesto.
+* Aprender a programar.
+* Desarrollar conocimientos básicos sobre el uso de Arduino.
+* Conseguir transmitir información entre el Arduino y el ordenador.
