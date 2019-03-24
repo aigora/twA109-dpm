@@ -1,6 +1,6 @@
 # Caja musical
 
-Nuestro trabajo consiste en contruir una caja la cual contiene una serie de botones, los cuales al pulsarlos, el ordenador recibe la información y reproduce sonidos de las notas musical/ los instrumentos musicales/ las canciones, dependiendiendo del botón pulsado.
+Nuestro trabajo consiste en contruir una caja la cual contiene nueve botones, una principal para cambiar entre tres modos (instrumentos) a elegir y ocho botones los cuales al pulsarlos, el ordenador recibe la información y reproduce sonidos de las notas musical, en concreto una octava (do,re,mi,fa,sol,la,si,do), en ellos se instalan unos sensores de fuerza que permite reproducir el sonido a mayor o menor intensidad.
 
 ## Integrantes del equipo
 
