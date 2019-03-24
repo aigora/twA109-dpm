@@ -8,7 +8,7 @@ Integrantes | Usuario | Correo
 ------------|---------|-------
 Aiwen Zhou | @azhou12 | a.zhou@alumnos.upm.es
 Zhanyao Lin | @zhanyaolin | zhanyao.lin@alumnos.upm.es
-Wei Zheng | @asdfghjkl | smcfbsdjkbcjkasncl
+Wei Zheng | @weizheng13 | wei.zheng13@alumnos.upm.es
 
 
 ## Objetivos del trabajo
