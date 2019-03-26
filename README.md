@@ -4,11 +4,11 @@ Nuestro trabajo consiste en contruir una caja la cual contiene nueve botones, un
 
 ## Integrantes del equipo
 
-Integrantes | Usuario | Correo
-------------|---------|-------
-Aiwen Zhou | @azhou12 | a.zhou@alumnos.upm.es
-Zhanyao Lin | @zhanyaolin | zhanyao.lin@alumnos.upm.es
-Wei Zheng | @weizheng13 | wei.zheng13@alumnos.upm.es
+Integrantes | Usuario 
+------------|---------
+Aiwen Zhou | @azhou12 
+Zhanyao Lin | @zhanyaolin 
+Wei Zheng | @weizheng13 
 
 
 ## Objetivos del trabajo
