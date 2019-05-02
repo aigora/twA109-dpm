@@ -30,10 +30,12 @@ int main(void)
 void autoConnect(SerialPort *arduino,char *incomingData)
  {
    int readResult;
-   int i;
-   char fichero[]="arpa.wav";
+   int i,n,j;
+   char fichero1[]="arpa.wav";
    char fichero2[]="gong.wav";
+   char fichero3[]="platillo.wav";
    
+
  
    // Espera la conexión con Arduino
    while (!isConnected(arduino))
@@ -53,15 +55,47 @@ void autoConnect(SerialPort *arduino,char *incomingData)
       if (readResult!=0){
       	printf("%s - %d\n", incomingData,readResult);
  
-   
-	// if(*incomingdata=='A')
-	    if(*incomingData<=1025)
-		    PlaySound(fichero,NULL,SND_FILENAME | SND_ASYNC);
-		if(*incomingData<=2050)
-		   PlaySound(fichero2,NULL,SND_FILENAME | SND_ASYNC);
-	  
-      }
-	     
+        for(i=0;i<MAX_DATA_LENGTH;i++){
+        	n=0;
+	      if(incomingData[i]=='A'){
+	 	   for(j=i+1;incomingData[j]!='@';j++)
+	        {
+	           if (incomingData[j]>='0' && incomingData[j]<='9')
+	    	    n=n*10+incomingData[j]-'0';
+		      
+	        }
+	         
+	         printf("He leido el %d\n",n);
+	         PlaySound(fichero1,NULL,SND_FILENAME | SND_ASYNC);
+	       
+	      }
+
+		
+		    
+		      if(incomingData[i]=='B'){
+		      	for(j=i+1;incomingData[j]>='@';j++){
+		        	if (incomingData[j]>='0' && incomingData[j]<='9')
+	    	          n=n*10+incomingData[j]-'0';
+				}
+				  printf("He leido el %d\n",n);
+		          PlaySound(fichero2,NULL,SND_FILENAME | SND_ASYNC);	
+                 
+			  }
+			  
+			  if(incomingData[i]=='C'){
+		      	for(j=i+1;incomingData[j]>='@';j++){
+		        	if (incomingData[j]>='0' && incomingData[j]<='9')
+	    	          n=n*10+incomingData[j]-'0';
+				}
+				  printf("He leido el %d\n",n);
+		          PlaySound(fichero3,NULL,SND_FILENAME | SND_ASYNC);	
+                 
+			  }
+		        
+          
+	 } 	
+   	
+   }	     
             	
 	}
       Sleep(10);
