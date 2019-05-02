@@ -1,6 +1,6 @@
 const int sensor1=A0; //se declara la variable para hacer referencia a que el sensor está conectado en Pin 0
 const int sensor2=A1;
- 
+const int sensor3=A2;
 
 void setup()
 
@@ -8,6 +8,9 @@ void setup()
 
 Serial.begin(9600); // Inicializa el serial
 
+for(int j=2;j<10;j++){
+   pinMode(j,OUTPUT);
+} 
 }
 
  
@@ -18,18 +21,38 @@ void loop()
 
 int val1= analogRead(sensor1); // lee la señal de entrada del sensor y lo almacena en la variable val
 int val2=analogRead(sensor2);
+int val3=analogRead(sensor3);
 
 if(val1>=50){
-  Serial.println(val1); // Imprime el valor de val en cada renglón
+  Serial.println("A");
+  Serial.println(val1);// Imprime el valor de val en cada renglón
+  Serial.println("@");
+  digitalWrite(8,HIGH);
+  delay(200);
+  digitalWrite(8,LOW);
   delay(200);
 }
 
 if(val2>=50){
- val2=val2+1025;
+  Serial.println("B");
   Serial.println(val2); // Imprime el valor de val en cada renglón
+  Serial.println("@");
+  digitalWrite(7,HIGH);
+  delay(200);
+  digitalWrite(7,LOW);
   delay(200);
 }
 
+if(val3>=50){
+  Serial.println("C");
+  Serial.println(val3); // Imprime el valor de val en cada renglón
+  Serial.println("@");
+  digitalWrite(4,HIGH);
+  delay(200);
+  digitalWrite(4,LOW);
+    
+  delay(200);
+}
 
 delay(200);
 
