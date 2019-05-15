@@ -53,7 +53,8 @@ void autoConnect(SerialPort *arduino,char *incomingData)
    {
       readResult = readSerialPort(arduino,incomingData,MAX_DATA_LENGTH);
       if (readResult!=0){
-      	printf("%s - %d\n", incomingData,readResult);
+      	printf("%s", incomingData);
+      	//printf("\n%d\n",readResult);
  
         for(i=0;i<MAX_DATA_LENGTH;i++){
         	n=0;
@@ -65,7 +66,7 @@ void autoConnect(SerialPort *arduino,char *incomingData)
 		      
 	        }
 	         
-	         printf("He leido el %d\n",n);
+	         
 	         PlaySound(fichero1,NULL,SND_FILENAME | SND_ASYNC);
 	       
 	      }
@@ -77,7 +78,7 @@ void autoConnect(SerialPort *arduino,char *incomingData)
 		        	if (incomingData[j]>='0' && incomingData[j]<='9')
 	    	          n=n*10+incomingData[j]-'0';
 				}
-				  printf("He leido el %d\n",n);
+				 
 		          PlaySound(fichero2,NULL,SND_FILENAME | SND_ASYNC);	
                  
 			  }
@@ -87,17 +88,17 @@ void autoConnect(SerialPort *arduino,char *incomingData)
 		        	if (incomingData[j]>='0' && incomingData[j]<='9')
 	    	          n=n*10+incomingData[j]-'0';
 				}
-				  printf("He leido el %d\n",n);
+				  
 		          PlaySound(fichero3,NULL,SND_FILENAME | SND_ASYNC);	
                  
 			  }
-		        
-          
+			 
+	  
 	 } 	
    	
    }	     
-            	
-	}
+    }
+	
       Sleep(10);
 
 
