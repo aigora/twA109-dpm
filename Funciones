@@ -1,5 +1,0 @@
-int modo(int);
-void fuerza(float);
-void led();
-void notas();
-void sonar();
