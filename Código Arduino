@@ -27,31 +27,75 @@ if(val1>=50){
   Serial.println("A");
   Serial.println(val1);// Imprime el valor de val en cada renglón
   Serial.println("@");
-  digitalWrite(8,HIGH);
+  if(val1>=50){
+  digitalWrite(10,HIGH);
   delay(200);
-  digitalWrite(8,LOW);
+  digitalWrite(10,LOW);
+  //delay(200);
+  }
+  if(val1>=200){
+  digitalWrite(11,HIGH);
   delay(200);
+  digitalWrite(11,LOW);
+  
+  //delay(200);
+    }
+ if(val1>=600){
+  digitalWrite(12,HIGH);
+  delay(200);
+  digitalWrite(12,LOW);
+  //delay(200);
+    }
+ 
 }
 
 if(val2>=50){
   Serial.println("B");
   Serial.println(val2); // Imprime el valor de val en cada renglón
   Serial.println("@");
+  if(val2>=50){
+  digitalWrite(9,HIGH);
+  delay(200);
+  digitalWrite(9,LOW);
+  //delay(200);
+  }
+  if(val2>=200){
+  digitalWrite(8,HIGH);
+  delay(200);
+  digitalWrite(8,LOW);
+ // delay(200);
+    }
+ if(val2>=600){
   digitalWrite(7,HIGH);
   delay(200);
   digitalWrite(7,LOW);
-  delay(200);
+  //delay(200);
+    }
 }
 
 if(val3>=50){
   Serial.println("C");
   Serial.println(val3); // Imprime el valor de val en cada renglón
   Serial.println("@");
+  if(val3>=50){
+  digitalWrite(6,HIGH);
+  delay(200);
+  digitalWrite(6,LOW);
+  //delay(200);
+  }
+  if(val3>=200){
+  digitalWrite(5,HIGH);
+  delay(200);
+  digitalWrite(5,LOW);
+  
+  //delay(200);
+    }
+ if(val3>=600){
   digitalWrite(4,HIGH);
   delay(200);
   digitalWrite(4,LOW);
-    
-  delay(200);
+  //delay(200);
+    }
 }
 
 delay(200);
